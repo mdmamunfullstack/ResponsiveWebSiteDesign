@@ -1,0 +1,258 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Fonts Weight */
+  --fw-medium: 500;
+  /* Colors */
+  --primary: #F01F4B;
+  --primary-light: #FFEAEE;
+  --black: #18181B;
+  --bg-secondary: #F8F8F8;
+  --secondary: #969696;
+}
+
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.text-black {
+  color: var(--black) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light) !important;
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary) !important;
+}
+
+.bg-black {
+  background-color: var(--black) !important;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
+/* Navbar */
+.navbar .nav-link {
+  color: var(--black);
+  margin-right: 20px;
+}
+
+.navbar .nav-link:hover {
+  color: var(--primary);
+}
+
+.drop-shadow {
+  box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.04);
+}
+
+/* Button */
+a.btn {
+  border-radius: 8px;
+  border: 0;
+  position: relative;
+  top: 0;
+  box-shadow: none;
+  cursor: pointer;
+  transition: top ease 0.5s;
+}
+
+a.btn-primary {
+  background-color: var(--primary) !important;
+  padding: 15px 25px;
+  font-weight: var(--fw-medium);
+  font-size: 18px;
+}
+
+a.btn-primary:hover,
+a.btn-primary:focus {
+  top: -5px;
+  background-color: var(--primary) !important;
+  box-shadow: 0px 4px 30px rgba(240, 31, 75, 0.05);
+  color: white !important;
+}
+
+a.btn-primary-light {
+  background-color: var(--primary-light);
+  color: var(--primary);
+  font-weight: var(--fw-medium);
+  padding: 14px 20px;
+}
+
+a.btn-primary-light:hover,
+a.btn-primary-light:focus {
+  top: -5px;
+  box-shadow: 0px 4px 30px rgba(240, 31, 75, 0.05);
+  background-color: var(--primary-light) !important;
+  color: var(--primary) !important;
+}
+
+a.btn-outline-primary {
+  color: var(--primary);
+  font-weight: var(--fw-medium);
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--primary);
+  font-size: 18px;
+}
+
+a.btn-outline-primary:hover,
+a.btn-outline-primary:focus {
+  background-color: var(--primary) !important;
+  color: white;
+  border: 1px solid var(--primary) !important;
+}
+
+
+/*Feature*/
+
+.features {
+  padding-top: 120px;
+}
+
+.features h2 {
+  letter-spacing: 0.005em;
+  font-size: 36px;
+  line-height: 54px;
+}
+
+.features .content {
+  border-radius: 14px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  padding: 31px;
+  cursor: pointer;
+}
+
+.features .content p {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  margin-bottom: 0;
+}
+
+/*Benefit*/
+
+.bg-secondary {
+  margin-top: 120px;
+  padding: 120px 0;
+}
+
+.bg-secondary .benefit h2 {
+  font-size: 36px;
+  letter-spacing: 0.010em;
+  line-height: 50px;
+}
+
+
+.bg-secondary .benefit p {
+
+  letter-spacing: 0.010em;
+  margin-top: 25px;
+}
+
+.bg-secondary .benefit .accordion .accordion-item {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1.5px solid rgba(153, 153, 153, 0.15);
+  padding: 0;
+  background-color: transparent;
+}
+
+.bg-secondary .benefit .accordion .accordion-item .accordion-button {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  background: transparent;
+  padding: 25px 0;
+
+}
+
+
+.bg-secondary .benefit .accordion .accordion-item .accordion-button.collapsed::after {
+  background: url("/assets/icon/bx-chevron-down.svg");
+}
+
+.bg-secondary .benefit .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  background: url("/assets/icon/bx-chevron-down.svg");
+}
+
+.bg-secondary .benefit .accordion .accordion-item .accordion-body {
+  letter-spacing: 0.005em;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+
+/*Price*/
+
+.price .card-price {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+  padding: 30px;
+  margin-top: 140px;
+  cursor: pointer;
+}
+
+.price .card-price h1 span {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  color: #969696;
+  font-weight: var(--fw-medium);
+}
+
+.price .card-price ul {
+  margin-top: 40px;
+
+}
+
+.price .card-price ul li {
+  padding-bottom: 15px;
+
+}
+
+
+/*Footer*/
+.footer {
+  margin-top: 200px;
+  padding-top: 100px;
+}
+
+.footer .social-media i {
+  color: white;
+}
+
+.footer .social-media i:hover {
+  color: var(--primary);
+}
+
+.footer ul li {
+  margin-bottom: 30px;
+}
